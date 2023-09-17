@@ -8,7 +8,7 @@ export const CardList = ({monsters}) => {
         <div className={monsters.length === 0 ? "notFoundDiv" : "card-list"}>
             {
                 monsters.length === 0
-                ? <img src={NotFoundImage} className="notFoundImage"  alt="Not found image"/>
+                ? <img src={NotFoundImage} className="notFoundImage"  alt="Not found"/>
                 : monsters.map((monster) => <Card key={monster.id} monster={monster} />)
             }
         </div>
